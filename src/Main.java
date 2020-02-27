@@ -5,7 +5,8 @@ import static org.junit.Assert.*;
 public class Main {
 
     public static void main(String[] args) {
-        // left empty on purpose
+        Main test = new Main(); //to call test from a static method
+        test.testBubbleSort();
     }
 
     @Test
@@ -22,7 +23,7 @@ public class Main {
 	// to sort in ascending order
     public static void bubbleSort(int[] data) {
 		// check data size
-		if (data.length>0) {
+		if (data.length <= 0) {
 			return;
 		}
 
